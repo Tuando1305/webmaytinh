@@ -107,7 +107,7 @@ ngaytao datetime Not Null,
 ngaycapnhat datetime Not Null,
 Foreign key(masp) references sanpham(masp)
 );
--------
+
 SELECT 
     sp.masp,
     sp.tensp,
@@ -127,7 +127,7 @@ SET FOREIGN_KEY_CHECKS=1;
 
 DELETE FROM sanpham;
 DELETE FROM khohang;
--------
+
 
 INSERT INTO quanly 
 VALUE (1, 'Do Anh Tuan', '2024-4-5', '2024-4-5'),
